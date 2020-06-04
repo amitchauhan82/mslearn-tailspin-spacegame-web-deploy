@@ -28,7 +28,7 @@ stages:
 
     - task: RestoreAndSaveCache@1
       inputs:
-        keyfile: '**/package-lock.json, !**/node_modules/**/package-lock.json, !**/.*/**/package-lock.json'
+        keyfile: '**/package-lock.json, !**/node_modules/**/package-lock.json'
         targetfolder: '**/node_modules, !**/node_modules/**/node_modules'
         vstsFeed: '03e81583-10d1-4139-a666-ed8b511a15d6'
         platformIndependent: true
